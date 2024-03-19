@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read JSON with D3.js</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <script>
+        async function loadData() {
+            const url = "https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json";
+
+            try {
+                const data = await d3.json(url);
+                console.log(data); // Log the data to the console
+                // You can now use 'data' to work with your JSON data
+            } catch (error) {
+                console.log(error); // Handle any errors that occur during the fetch.
+            }
+        }
+
+        loadData();
+    </script>
+</body>
+</html>
