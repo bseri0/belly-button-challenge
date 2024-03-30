@@ -1,4 +1,5 @@
-**startercode/static/js/app.js** /.
+**startercode/static/js/app.js** 
+
 **startercode/index.html**
 
 Constructed functions in JavaScript to interact with html index file and json samples of belly button bacteria biodiversity data.
