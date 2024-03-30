@@ -18,9 +18,6 @@ function updateAll(data, selectedValue) {
     updateCharts('bar', data.samples.filter(sample => sample.id === selectedValue)[0]);
     updateCharts('bubble', data.samples.filter(sample => sample.id === selectedValue)[0], true);
     updateGauge(data.metadata.filter(meta => meta.id == selectedValue)[0].wfreq);
-    updateGauge(data.metadata.filter(meta => meta.id == selectedValue)[1].wfreq);
-    
-
 }
 
 function updateDemo(metadata) {
